@@ -4,11 +4,11 @@ Usually, we use two methods for defining data in TypeScript one interface and an
 It seems same but has a fundamental difference between them 
 Let's discuss in detail
 
-## 01. Core syntax and definition
+
 
 Using `type`:
 ```ts
-
+## 01. Core syntax and definition
  
 type User = {
   name: string;
