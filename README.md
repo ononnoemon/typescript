@@ -6,10 +6,11 @@ Let's discuss in detail
 
 
 
-Using `type`:
-```ts
+
 ## 01. Core syntax and definition
- 
+Emaple
+Using `type`:
+```ts 
 type User = {
   name: string;
   phone: number;
@@ -19,9 +20,12 @@ interface User {
   name: string;
   phone: number;
 }
-
+```
 ## 02 Extend process
-One interface can extend another interface
+# One interface can extend another interface
+
+Using `type`:
+```ts 
 interface User {
   name: string;
 }
@@ -30,7 +34,8 @@ interface Admin extends User {
   id: number;
 }
 
-But in similar task type do using intersection operator (&)
+``` 
+# But in similar task type do using intersection operator (&)
 type User= {
   name: string;
 };
