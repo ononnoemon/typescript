@@ -22,7 +22,7 @@ interface User {
 }
 ```
 ## 02 Extend process
-# One interface can extend another interface
+ One interface can extend another interface
 
 Example:
 ```ts 
@@ -36,6 +36,8 @@ interface Admin extends User {
 
 ``` 
 # But in similar task type do using intersection operator (&)
+Example:
+```ts 
 type User= {
   name: string;
 };
@@ -43,21 +45,24 @@ type User= {
 type Admin= User & {
   Id: number;
 };
-
+```
 
 # Fundamental Difference between interface and type alias
 ## 1)By using type alias we can declare not only object but also we can declare union,tuple,primitive
-
+Example
+```ts 
  type Status = "success" | "error";
 
 type Point = [number, number];
 
 type Greet = (name: string) => string;
-
+```
 But interface only use for object type data
 
 ## 2)Declaration Merging Factor
 If you declare an interface with the same name multiple times, TypeScript will combine them all.
+Example
+```ts 
 interface User {
   name: string;
 }
@@ -67,6 +72,7 @@ interface User {
 }
 
 // Now: { name: string, age: number }
+```
 
 But if once type alias declare further it can not redeclare at the same name
 
