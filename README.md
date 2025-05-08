@@ -1,17 +1,14 @@
 # Difference between interface and type alias in TypeScript
 
-Usually we use two method for defined data in typescript one interface and other type alias
-It seems same but has some fundamental difference between them 
-Let discus in details
+Usually, we use two methods for defining data in TypeScript one interface and another type alias
+It seems same but has a fundamental difference between them 
+Let's discuss in detail
 
-## 01. Core syntax and define
+## 01. Core syntax and definition
 
 Using `type`:
 ```ts
-type User = {
-  name: string;
-  phone: number;
-};
+
  
 type User = {
   name: string;
