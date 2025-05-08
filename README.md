@@ -5,6 +5,13 @@ It seems same but has some fundamental difference between them
 Let discus in details
 
 ## 01. Core syntax and define
+
+Using `type`:
+```ts
+type User = {
+  name: string;
+  phone: number;
+};
  
 type User = {
   name: string;
