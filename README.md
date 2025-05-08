@@ -8,8 +8,8 @@ Let's discuss in detail
 
 
 ## 01. Core syntax and definition
-Emaple
-Using `type`:
+Emaple:
+
 ```ts 
 type User = {
   name: string;
@@ -24,7 +24,7 @@ interface User {
 ## 02 Extend process
 # One interface can extend another interface
 
-Using `type`:
+Example:
 ```ts 
 interface User {
   name: string;
