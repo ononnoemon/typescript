@@ -76,7 +76,56 @@ interface User {
 
 But if once type alias declare further it can not redeclare at the same name
 
-## Conclusion:good practice is for  defining object structure,class implementations and oop,when you need declaration merging and extending others interface you should use interface
-## And when you declare union and intersection types,tuples,function and other complex data type in that case you should use Type alias
+### Conclusion:good practice is for  defining object structure,class implementations and oop,when you need declaration merging and extending others interface you should use interface
+### And when you declare union and intersection types,tuples,function and other complex data type in that case you should use Type alias
+
+
+
+
+
+# Uses Union and Intersection of TypeScript
+
+Union (|) and intersection (&) are important concept in typescript let's discuss about them
+
+### 01 Union Type
+The Union type is used when a variable can be of any one of multiple types.
+When a variable can be either a string, a number, or a boolean in this situations, the Union type is used.
+Example
+```ts 
+function printId(id: string | number): void {
+  console.log("ID:", id);
+}
+
+printId("abc123"); // ID: abc123
+printId(456);  	// ID: 456
+```
+### 02 Intersection Type
+intersection type is used when a variable or object needs to have properties of more than one type together
+If all properties of two different types are needed in one object, then the intersection type is used
+Example
+```ts 
+type Person = {
+  name: string;
+  age: number;
+};
+
+type Employee = {
+  employeeId: number;
+  department: string;
+};
+
+// Intersection type
+type Staff = Person & Employee;
+
+const staffMember: Staff = {
+  name: "Rakib",
+  age: 30,
+  employeeId: 101,
+  department: "IT"
+};
+```
+### Where is it used?
+Union: When the input or argument can be of more than one type —  string | number
+Intersection: When you want an object to have properties of more than one type together  User & Admin
 
 
